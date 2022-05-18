@@ -20,7 +20,8 @@ class PostController extends Controller
 
     public function post(PostRequest $request)
     {
-        $post = Post::all();
+        $posts = Post::all();
+        // データをDBに保存できなかったときの表記「$post = Post::all();」
 
         $post = new Post;
         $form = $request->all();
