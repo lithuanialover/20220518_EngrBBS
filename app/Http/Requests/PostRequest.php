@@ -34,6 +34,7 @@ class PostRequest extends FormRequest
     {
         return [
             'name.required' => '投稿者名を入力してください',
+            'date.required' => '投稿日を入力してください',
             'content.required' => '投稿内容を入力してください',
         ];
     }

@@ -11,7 +11,9 @@ class PostController extends Controller
 {
     public function index(Request $request)
     {
-        $posts = Post::all()->sortByDesc("id");
+        // $posts = Post::all()->sortByDesc("id");
+
+        $posts = Post::all()->sortByDesc("created_at");
 
         $posts = Post::paginate(5); // これでページネーション機能が追加される
 

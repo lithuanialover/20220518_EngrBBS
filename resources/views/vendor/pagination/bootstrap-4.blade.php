@@ -1,4 +1,4 @@
-@if ($paginator->hasPages())
+ @if ($paginator->hasPages())
     <nav>
         <ul class="pagination">
             {{-- Previous Page Link --}}
@@ -31,7 +31,7 @@
                 @endif
             @endforeach
 
-            {{-- Next Page Link --}}
+            {{-- Next Page Link--}}
             @if ($paginator->hasMorePages())
                 <li class="page-item">
                     <a class="page-link" href="{{ $paginator->nextPageUrl() }}" rel="next" aria-label="@lang('pagination.next')">&rsaquo;</a>
